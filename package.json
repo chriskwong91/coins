@@ -1,0 +1,23 @@
+{
+  "name": "coins",
+  "version": "1.0.0",
+  "description": "Get coins data",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriskwong91/coins.git"
+  },
+  "keywords": [
+    "coins",
+    "ven"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chriskwong91/coins/issues"
+  },
+  "homepage": "https://github.com/chriskwong91/coins#readme"
+}
