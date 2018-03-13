@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/chriskwong91/coins/issues"
   },
-  "homepage": "https://github.com/chriskwong91/coins#readme"
+  "homepage": "https://github.com/chriskwong91/coins#readme",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "numeral": "^2.0.6",
+    "request": "^2.85.0"
+  }
 }
