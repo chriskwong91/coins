@@ -2,11 +2,8 @@ const request = require('request-promise');
 const chalk = require('chalk');
 const numeral = require('numeral');
 
-const URLS = [
-  'https://api.coinmarketcap.com/v1/global/',
-  'https://api.coinmarketcap.com/v1/ticker/bitcoin/',
-  'https://api.coinmarketcap.com/v1/ticker/vechain/',
-];
+const URLS = [ 'https://api.coinmarketcap.com/v1/global/' ];
+const TICKERS = ['bitcoin', 'vechain', 'icon', 'fortuna', 'eos', 'enigma-project', 'ethereum'];
 
 function formatDate(date) {
   var hours = date.getHours();
@@ -53,6 +50,11 @@ async function fetchData() {
   for (let url of URLS) {
     const coin = await makeRequest(url)
     console.log(coin)
+  }
+
+  for (let ticker of TICKERS) {
+    const coin = await makeRequest('https://api.coinmarketcap.com/v1/ticker/' + ticker);
+    console.log(coin);
   }
 }
 
